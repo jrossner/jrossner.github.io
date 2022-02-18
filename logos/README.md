@@ -13,3 +13,5 @@ Image sources:
     - https://en.wikipedia.org/wiki/Python_(programming_language)#/media/File:Python-logo-notext.svg
   - r-logo.svg
     - https://www.r-project.org/logo/
+  - sas-logo.png
+    - https://cdn.icon-icons.com/icons2/2699/PNG/512/sas_logo_icon_170761.png
