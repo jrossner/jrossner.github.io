@@ -10,6 +10,6 @@ Image sources:
   - javascript-logo.png
     - https://www.freepnglogos.com/images/javascript-39397.html 
   - python-logo.png
-    - https://freepngimg.com/thumb/categories/1402.png  
+    - https://en.wikipedia.org/wiki/Python_(programming_language)#/media/File:Python-logo-notext.svg
   - r-logo.svg
     - https://www.r-project.org/logo/
