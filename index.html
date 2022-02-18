@@ -27,7 +27,7 @@
       <p>
         <h1>Jacob Rossner</h1>
         <h3>Data Analyst</h3>
-      <h4><span style="color:rgb(198,146,20);">BSc Statistics (2021)</span> from <span style="color:rgb(21,71,52);">California Polytechnic State University <img src="logos/cal-poly-logo.png" style='height:1em; width:auto'/></span></h4>
+      <h4><span style="color:rgb(198,146,20);">BSc in Statistics (2021)</span> from <span style="color:rgb(21,71,52);">California Polytechnic State University <img src="logos/cal-poly-logo.png" style='height:1em; width:auto'/></span></h4>
       </p>
     </section>
     
@@ -75,12 +75,28 @@
       ch = document.getElementById('chart')
       Plotly.newPlot(ch,
                      [{
-                       type: 'bar',
-                       x: ["A","B","C"],
-                       y: [17,12,23]
+                       type: 'sunburst',
+                       labels: ["Sports","Finance","Puzzles",
+                                "Playing","Watching", "Stocks","Blockchain Tech","Minesweeper","Sudoku","Disentaglement",
+                                "Rugby","Basketball","NBA","NHL","NFL", "Fantom","Avalanche","Stellar",
+                                "Celtics", "Bruins", "Patriots"],
+                       parents: ["My Interests","My Interests","My Interests",
+                                 "Sports","Sports", "Finance","Finance", "Puzzles","Puzzles","Puzzles",
+                                "Playing","Playing", "Watching","Watching","Watching", "Blockchain Tech","Blockchain Tech","Blockchain Tech",
+                                "NBA", "NHL", "NFL"],
+                       values: [45,40,15,
+                                15,30, 32,8, 8,4,3,
+                                12,3, 12,10,8, 3,3,2,
+                                11,3,5],
+                       marker: {
+                         colors: ["blue","green","orange"]
+                       },
+                       branchvalues: "total",
+                       insidetextorientation: "radial",
+                       hoverinfo: "label+percent entry"
                      }],
                      {
-                      title: "Chart1"
+                      title: "About Me"
                      }
                     )
     </script>
