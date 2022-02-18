@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
     <style>
       img {
         height: auto;
@@ -42,6 +43,7 @@
               <li>Pandas</li>
               <li>Matplotlib</li>
               <li>Plotly</li>
+              <li>Quart</li>
             </ul>
           <li><b>Javascript</b></li>
             <ul>
@@ -51,11 +53,16 @@
           <li><b>R</b></li>
             <ul>
               <li>Tidyverse</li>
+              <li>TSA</li>
+              <li>Caret</li>
             </ul>
+          <li><b>SAS & JMP</b></li>
           <li><b>HTML</b></li>
         </ul>
       </p>
     </section>
+
+    <div id='chart' style='display: table; margin: 0 auto; text-align: left;'></div>
     
     <section id='contact'>
       <p>
@@ -63,5 +70,19 @@
         My address: rosj016 at gmail dot com
       </p>
     </section>
+
+    <script>
+      ch = document.getElementById('chart')
+      Plotly.newPlot(ch,
+                     [{
+                       type: 'bar',
+                       x: ["A","B","C"],
+                       y: [17,12,23]
+                     }],
+                     {
+                      title: "Chart1"
+                     }
+                    )
+    </script>
   </body>
 </html>
